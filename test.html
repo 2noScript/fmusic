@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" async></script>
+
+    <title>Document</title>
+
+    <style>
+        .progress{
+            position: relative;
+            width: 400px;
+            height: 20px;
+            background-color: aqua;
+        }
+        .progress__input,
+        .progress__input::-webkit-slider-runnable-track,
+        .progress__input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+        .progress__input{
+            height: 100%;
+        }
+        .progress__thumb{
+            position:absolute;
+            height: 20px;
+            width:20px;
+            background-color: black;
+            top: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="progress">
+        <input type="range" class="progress__input" value="0" step="1" min="0" max="100">
+        <div class="progress__track"></div>
+        <div class="progress__thumb"></div>
+    </div>
+</body>
+
+</html>
